@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Administração de Notícias - ETA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Administrador - ETA</h1>
+    <p>Publique notícias, imagens, PDFs ou vídeos</p>
+  </header>
+
+  <div class="container">
+    <h2>Nova Publicação</h2>
+
+    <input type="text" id="titulo" placeholder="Título da notícia">
+    <textarea id="conteudo" rows="4" placeholder="Digite a notícia..."></textarea>
+
+    <label for="arquivo">Anexar Imagem, PDF ou Vídeo:</label>
+    <input type="file" id="arquivo" accept="image/*,application/pdf,video/*">
+
+    <button onclick="publicar()">Publicar</button>
+
+    <h2 style="margin-top:40px;">Notícias Publicadas</h2>
+    <div id="noticias-publicadas"></div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+
+</html>
