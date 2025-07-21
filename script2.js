@@ -45,3 +45,21 @@
           });
         });
     }
+
+function publicar() {
+  const titulo = document.getElementById("titulo").value;
+  const conteudo = document.getElementById("conteudo").value;
+
+  if (titulo && conteudo) {
+    db.collection("noticias").add({
+      titulo,
+      conteudo,
+      data: new Date()
+    }).then(() => {
+      alert("Notícia publicada!");
+      carregarNoticias();
+    });
+  } else {
+    alert("Preencha todos os campos.");
+  }
+}
