@@ -14,20 +14,11 @@
     <p>Publique notícias, imagens, PDFs ou vídeos</p>
   </header>
 
-  <div class="container">
-    <h2>Nova Publicação</h2>
-
-    <input type="text" id="titulo" placeholder="Título da notícia">
-    <textarea id="conteudo" rows="4" placeholder="Digite a notícia..."></textarea>
-
-    <label for="arquivo">Anexar Imagem, PDF ou Vídeo:</label>
-    <input type="file" id="arquivo" accept="image/*,application/pdf,video/*">
-
-    <button onclick="publicar()">Publicar</button>
-
-    <h2 style="margin-top:40px;">Notícias Publicadas</h2>
-    <div id="noticias-publicadas"></div>
-  </div>
+ <div id="user-info" style="text-align:right; margin: 10px;"></div>
+  <h1>Bem-vindo ao Painel de Administração</h1>
+  <p>Aqui você pode postar notícias, imagens, vídeos, PDFs...</p>
+  <div id="noticias"></div>
+  <button onclick="logout()">Sair</button>
 
   <script src="script2.js"></script>
 </body>
